@@ -37,6 +37,6 @@ Core Data App uses Core Data to persist its data locally and also maitain its da
 * Create UI Tests
 
 
->This is a project made for Butterfly Systems job interview. 
+>This project is part of an assignment app to Butterfly Systems.
 
 ![End Banner](Documentation/readme-end-banner-mau.png)
