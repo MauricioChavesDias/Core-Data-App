@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oNE-R0-qwb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Purchase Orders-->
+        <scene sceneID="gQ2-AE-dtn">
+            <objects>
+                <tableViewController id="vHy-ar-gPh" customClass="PurchaseOrdersTableViewController" customModule="Core_Data_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u8v-XG-5fI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="separatorColor" red="0.22423291209999999" green="0.24180665609999999" blue="0.32942503690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <connections>
+                            <outlet property="dataSource" destination="vHy-ar-gPh" id="7sb-QD-9qy"/>
+                            <outlet property="delegate" destination="vHy-ar-gPh" id="jH7-PH-siL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Purchase Orders" id="sfG-HF-15L">
+                        <barButtonItem key="rightBarButtonItem" title="Add a new purchase order" id="q4F-cA-hz8">
+                            <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" red="0.75294117647058822" green="0.37647058823529411" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="addNewPurchaseOrderButtonPressed:" destination="vHy-ar-gPh" id="kSn-vN-SIt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="i5X-9l-Lhk" kind="show" identifier="goToItemsTableVC" id="Ck1-iU-Uvh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbN-rV-zmX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650.7246376811595" y="117.85714285714285"/>
+        </scene>
+        <!--Items-->
+        <scene sceneID="KW6-Ae-hm2">
+            <objects>
+                <tableViewController id="i5X-9l-Lhk" customClass="ItemsTableViewController" customModule="Core_Data_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7X4-iq-xfc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="separatorColor" red="0.22519751199999999" green="0.2491421019" blue="0.34869177709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="i5X-9l-Lhk" id="6xE-gJ-ZQj"/>
+                            <outlet property="delegate" destination="i5X-9l-Lhk" id="tzB-qQ-qZ5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Items" id="5ts-eI-uaH">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Add a new Item" id="Qwa-fD-A6h">
+                                <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                <color key="tintColor" red="0.75294117647058822" green="0.37647058823529411" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="addNewItemButtonPressed:" destination="i5X-9l-Lhk" id="yE5-lO-Tx2"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Invoices" id="vta-n5-1SX">
+                                <imageReference key="image" image="doc.circle.fill" catalog="system" symbolScale="large"/>
+                                <color key="tintColor" red="0.95294117649999999" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="viewInvoicesButtonPressed:" destination="i5X-9l-Lhk" id="D4n-19-u9j"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="bkN-vM-uei" kind="show" identifier="goToInvoicesTableVC" id="UhW-rT-ihd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyO-kY-GaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2729" y="427"/>
+        </scene>
+        <!--Invoices-->
+        <scene sceneID="y04-iV-T51">
+            <objects>
+                <tableViewController id="bkN-vM-uei" customClass="InvoicesTableViewController" customModule="Core_Data_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qGC-Tb-0KB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InvoiceCell" textLabel="GXt-xh-OBA" detailTextLabel="xyf-Zo-4Lg" style="IBUITableViewCellStyleValue1" id="m8U-ft-8qH">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="50.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m8U-ft-8qH" id="Ocb-7U-ygM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GXt-xh-OBA">
+                                            <rect key="frame" x="20" y="14" width="33.5" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                            <color key="textColor" red="0.25882352941176467" green="0.27450980392156865" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xyf-Zo-4Lg">
+                                            <rect key="frame" x="348" y="14" width="46" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                            <color key="textColor" red="0.25882352939999997" green="0.27450980390000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95686274510000002" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.22519751199999999" green="0.2491421019" blue="0.34869177709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bkN-vM-uei" id="1RD-t7-dUt"/>
+                            <outlet property="delegate" destination="bkN-vM-uei" id="3rl-zV-79z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Invoices" id="kSS-Sv-rYB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GV3-ab-3o8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3784" y="427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jhK-vf-4NS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oNE-R0-qwb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tbv-kA-wcL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.32549019607843138" green="0.38039215686274508" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vHy-ar-gPh" kind="relationship" relationship="rootViewController" id="WI3-mp-QXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WX4-jY-QKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740.57971014492762" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
