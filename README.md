@@ -3,7 +3,6 @@
 
 # Core-Data-App
 
-<img src= Documentation/Screenshot1.gif  height="375" width="175">
 
 ## Description
 
@@ -12,7 +11,7 @@ Core Data App uses Core Data to persist its data locally and also maitain its da
 ## Screenshot
 |       Core Data App       |       Testing       |
 |:---------------------:|:--------------------:|
-|<img src= Documentation/ScreenshotLaunch.jpeg  height="375" width="175">|<img src= Documentation/Screenshot1.gif  height="375" width="175">|
+|<img src= Documentation/ScreenshotLaunch.jpg  height="375" width="175">|<img src= Documentation/Screenshot1.gif  height="375" width="175">|
 
 
 ## Source Code
