@@ -19,12 +19,6 @@
 		293D78C5265B17EF002FECDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293D78C4265B17EF002FECDF /* Assets.xcassets */; };
 		293D78C8265B17EF002FECDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293D78C6265B17EF002FECDF /* LaunchScreen.storyboard */; };
 		293D78D1265B1C90002FECDF /* PurchaseOrderJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293D78D0265B1C90002FECDF /* PurchaseOrderJSON.swift */; };
-		29CC944126646608004C721A /* InvoiceCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC943B26646608004C721A /* InvoiceCoreData+CoreDataClass.swift */; };
-		29CC944226646608004C721A /* InvoiceCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC943C26646608004C721A /* InvoiceCoreData+CoreDataProperties.swift */; };
-		29CC944326646608004C721A /* ItemCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC943D26646608004C721A /* ItemCoreData+CoreDataClass.swift */; };
-		29CC944426646608004C721A /* ItemCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC943E26646608004C721A /* ItemCoreData+CoreDataProperties.swift */; };
-		29CC944526646608004C721A /* PurchaseOrderCoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC943F26646608004C721A /* PurchaseOrderCoreData+CoreDataClass.swift */; };
-		29CC944626646608004C721A /* PurchaseOrderCoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CC944026646608004C721A /* PurchaseOrderCoreData+CoreDataProperties.swift */; };
 		29D4BB59265B588D001CE209 /* PurchaseOrderJSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D4BB58265B588D001CE209 /* PurchaseOrderJSONManager.swift */; };
 		29D4BB5B265B5BB4001CE209 /* PurchaseOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D4BB5A265B5BB4001CE209 /* PurchaseOrderModel.swift */; };
 		29D4BB5D265B5C52001CE209 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D4BB5C265B5C52001CE209 /* ItemModel.swift */; };
@@ -48,12 +42,6 @@
 		293D78C7265B17EF002FECDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293D78C9265B17EF002FECDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		293D78D0265B1C90002FECDF /* PurchaseOrderJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOrderJSON.swift; sourceTree = "<group>"; };
-		29CC943B26646608004C721A /* InvoiceCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InvoiceCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		29CC943C26646608004C721A /* InvoiceCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InvoiceCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		29CC943D26646608004C721A /* ItemCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		29CC943E26646608004C721A /* ItemCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		29CC943F26646608004C721A /* PurchaseOrderCoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PurchaseOrderCoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		29CC944026646608004C721A /* PurchaseOrderCoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PurchaseOrderCoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		29D4BB58265B588D001CE209 /* PurchaseOrderJSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOrderJSONManager.swift; sourceTree = "<group>"; };
 		29D4BB5A265B5BB4001CE209 /* PurchaseOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOrderModel.swift; sourceTree = "<group>"; };
 		29D4BB5C265B5C52001CE209 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
@@ -107,12 +95,6 @@
 		293D78CF265B1C76002FECDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				29CC943B26646608004C721A /* InvoiceCoreData+CoreDataClass.swift */,
-				29CC943C26646608004C721A /* InvoiceCoreData+CoreDataProperties.swift */,
-				29CC943D26646608004C721A /* ItemCoreData+CoreDataClass.swift */,
-				29CC943E26646608004C721A /* ItemCoreData+CoreDataProperties.swift */,
-				29CC943F26646608004C721A /* PurchaseOrderCoreData+CoreDataClass.swift */,
-				29CC944026646608004C721A /* PurchaseOrderCoreData+CoreDataProperties.swift */,
 				293D78C1265B17EE002FECDF /* Core_Data_App.xcdatamodeld */,
 				293D78D0265B1C90002FECDF /* PurchaseOrderJSON.swift */,
 				29D4BB5A265B5BB4001CE209 /* PurchaseOrderModel.swift */,
@@ -217,21 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29CC944626646608004C721A /* PurchaseOrderCoreData+CoreDataProperties.swift in Sources */,
 				293D78C3265B17EE002FECDF /* Core_Data_App.xcdatamodeld in Sources */,
 				2920D0AD265F968500E49641 /* InvoicesTableViewController.swift in Sources */,
-				29CC944326646608004C721A /* ItemCoreData+CoreDataClass.swift in Sources */,
 				29D4BB5F265B5D04001CE209 /* InvoiceModel.swift in Sources */,
 				290221A2265C86FE00B53499 /* ItemsTableViewController.swift in Sources */,
 				29D4BB6C265B8E41001CE209 /* PurchaseOrderTableViewCell.swift in Sources */,
-				29CC944526646608004C721A /* PurchaseOrderCoreData+CoreDataClass.swift in Sources */,
 				293D78D1265B1C90002FECDF /* PurchaseOrderJSON.swift in Sources */,
-				29CC944126646608004C721A /* InvoiceCoreData+CoreDataClass.swift in Sources */,
 				29D4BB5D265B5C52001CE209 /* ItemModel.swift in Sources */,
 				29D4BB5B265B5BB4001CE209 /* PurchaseOrderModel.swift in Sources */,
 				29D4BB59265B588D001CE209 /* PurchaseOrderJSONManager.swift in Sources */,
-				29CC944426646608004C721A /* ItemCoreData+CoreDataProperties.swift in Sources */,
-				29CC944226646608004C721A /* InvoiceCoreData+CoreDataProperties.swift in Sources */,
 				293D78BD265B17EE002FECDF /* PurchaseOrdersTableViewController.swift in Sources */,
 				293D78B9265B17EE002FECDF /* AppDelegate.swift in Sources */,
 				290221A7265C921E00B53499 /* ItemTableViewCell.swift in Sources */,
